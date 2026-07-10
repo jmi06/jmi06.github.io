@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Sports on Jack Ibsen</title>
+    <link>http://localhost:1313/tags/sports/</link>
+    <description>Recent content in Sports on Jack Ibsen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-CA</language>
+    <copyright>Jack Ibsen</copyright>
+    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/sports/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Combined Optimal Route: Audience friendly route optimizations for SailGP</title>
+      <link>http://localhost:1313/articles/cor/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/cor/</guid>
+      <description>This project won third place at the 13th DeepSense Ocean of Data Challenge&#xA;In SailGP, each team takes a slightly different path in order to capitalize on the best wind conditions. Combined Optimal Route (COR) takes the path of every team, and tries to find the most optimal route between them.&#xA;If two cars are racing on a track, one on the inside, one on the outside, which car&amp;rsquo;s path will be faster?</description>
+      <content:encoded><![CDATA[<p><em>This project won third place at the <a href="https://deepsense.ca/ocean-of-data-challenge/">13th DeepSense Ocean of Data Challenge</a></em></p>
+<p>In SailGP, each team takes a slightly different path in order to capitalize on the best wind conditions. Combined Optimal Route (COR) takes the path of every team, and tries to find the most optimal route between them.</p>
+<p>If two cars are racing on a track, one on the inside, one on the outside, which car&rsquo;s path will be faster? COR takes this one step further, asking instead: is there a combination of both routes that is actually the fastest?</p>
+<p><img alt="GIF example of combining routes" src="/cor/racecar.gif"></p>
+<p>For this project, I was given sensor data collected at a frequency of 1Hz across all competing teams, and all races for two SailGP events.</p>
+<p>Every second of a leg is represented as a node in a directed graph. Each node contains the boat&rsquo;s heading, coordinates, the current wind speed, wind direction, and time elapsed during the leg. Directed edges are then connected between every node at time \(t\) to every other node at time \(t+1\)</p>
+<p>In order to determine how favourable the conditions are to travel between nodes, we apply a weight to our edges. This weight is known as our penalty, the higher the number, the less favourable and realistic the path becomes. The penalty formula is as follows.</p>
+\[Penalty = d(1000 + |h_{w} - h_{b}|)(cos(s))\]
+<p>Where:</p>
+<ul>
+<li>\(d\) is the distance between nodes.</li>
+<li>\(s\) is the speed of the wind.</li>
+<li>\(h_{w}\) is the heading of the wind.</li>
+<li>\(h_{b}\) is the heading of the boat.</li>
+</ul>
+<p>Dijsktra&rsquo;s algorithm is then run on our network to find the route with the lowest combined penalty. This in turn, becomes our most optimal route.</p>
+<p><img alt="Examples of Combined Optimal Routes" src="/cor/example_routes.jpg"></p>
+<p>Combined Optimal Route is not a perfect solution. For starters, the teams do not all pass these points at the same time. What might have been ideal conditions when the first place team sailed through, may not be ideal by the time the last place team reaches that point. It also does not take into account the real physics of these boats. A catamaran is not able to instantaneously take a 90 degree turn. But Combined Optimal Route is not meant to be a perfect solution. It is meant to allow a television audience to compare their favourite team&rsquo;s decisions, and how they chose to traverse the course. It gives the viewer a quick glance at how efficient each team&rsquo;s route was, and what theoretically could have been the best possible route.</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

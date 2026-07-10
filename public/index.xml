@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Jack Ibsen</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Jack Ibsen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-CA</language>
+    <copyright>Jack Ibsen</copyright>
+    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Combined Optimal Route: Audience friendly route optimizations for SailGP</title>
+      <link>http://localhost:1313/articles/cor/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/cor/</guid>
+      <description>This project won third place at the 13th DeepSense Ocean of Data Challenge&#xA;In SailGP, each team takes a slightly different path in order to capitalize on the best wind conditions. Combined Optimal Route (COR) takes the path of every team, and tries to find the most optimal route between them.&#xA;If two cars are racing on a track, one on the inside, one on the outside, which car&amp;rsquo;s path will be faster?</description>
+      <content:encoded><![CDATA[<p><em>This project won third place at the <a href="https://deepsense.ca/ocean-of-data-challenge/">13th DeepSense Ocean of Data Challenge</a></em></p>
+<p>In SailGP, each team takes a slightly different path in order to capitalize on the best wind conditions. Combined Optimal Route (COR) takes the path of every team, and tries to find the most optimal route between them.</p>
+<p>If two cars are racing on a track, one on the inside, one on the outside, which car&rsquo;s path will be faster? COR takes this one step further, asking instead: is there a combination of both routes that is actually the fastest?</p>
+<p><img alt="GIF example of combining routes" src="/cor/racecar.gif"></p>
+<p>For this project, I was given sensor data collected at a frequency of 1Hz across all competing teams, and all races for two SailGP events.</p>
+<p>Every second of a leg is represented as a node in a directed graph. Each node contains the boat&rsquo;s heading, coordinates, the current wind speed, wind direction, and time elapsed during the leg. Directed edges are then connected between every node at time \(t\) to every other node at time \(t+1\)</p>
+<p>In order to determine how favourable the conditions are to travel between nodes, we apply a weight to our edges. This weight is known as our penalty, the higher the number, the less favourable and realistic the path becomes. The penalty formula is as follows.</p>
+\[Penalty = d(1000 + |h_{w} - h_{b}|)(cos(s))\]
+<p>Where:</p>
+<ul>
+<li>\(d\) is the distance between nodes.</li>
+<li>\(s\) is the speed of the wind.</li>
+<li>\(h_{w}\) is the heading of the wind.</li>
+<li>\(h_{b}\) is the heading of the boat.</li>
+</ul>
+<p>Dijsktra&rsquo;s algorithm is then run on our network to find the route with the lowest combined penalty. This in turn, becomes our most optimal route.</p>
+<p><img alt="Examples of Combined Optimal Routes" src="/cor/example_routes.jpg"></p>
+<p>Combined Optimal Route is not a perfect solution. For starters, the teams do not all pass these points at the same time. What might have been ideal conditions when the first place team sailed through, may not be ideal by the time the last place team reaches that point. It also does not take into account the real physics of these boats. A catamaran is not able to instantaneously take a 90 degree turn. But Combined Optimal Route is not meant to be a perfect solution. It is meant to allow a television audience to compare their favourite team&rsquo;s decisions, and how they chose to traverse the course. It gives the viewer a quick glance at how efficient each team&rsquo;s route was, and what theoretically could have been the best possible route.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>~/Computing</title>
+      <link>http://localhost:1313/computing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/computing/</guid>
+      <description>Operating System After many years of distro-hopping, I landed on Debian about a year ago. I use it for it&amp;rsquo;s stability, package support, and reliability. I do not usually mind the older packages, although if I do need newer versions, I either use AppImages, .deb files, or simply build from source. On my desktop I use KDE, but have used basically everything else in the past, including tiling window managers.</description>
+      <content:encoded><![CDATA[<style>
+    h1{
+    font-size: 1.5rem;
+    }
+</style>
+<h3 id="operating-system">Operating System</h3>
+<p>After many years of distro-hopping, I landed on Debian about a year ago. I use it for it&rsquo;s stability, package support, and reliability. I do not usually mind the older packages, although if I do need newer versions, I either use AppImages, .deb files, or simply build from source. On my desktop I use KDE, but have used basically everything else in the past, including tiling window managers. I simply like the KDE suite of GUI applications.</p>
+<p>On my laptop, which is what I use most often, I run Windows 11. Despite this, I have a Debian WSL (Windows Subsystem for Linux) environment installed. This is where I do all of my development work. I have found WSL works impressively well, especially with the new Windows Terminal app.</p>
+<h3 id="text-editors">Text Editors</h3>
+<p>When working on a big project with large directories, or media files, I opt for a more complete text-editor/IDE such as VSCode. It integrates well with WSL. When working on smaller projects or simply editing files, I use a ligher, terminal based text editor. My current go-to is the Micro text editor. It shares many of the same keyboard shortcuts as VSCode and it&rsquo;s very easy to start using. Recently I have been dabbling in NeoVim. I haven&rsquo;t had the opportunity to learn the complete ins and outs, nor have I done any configuation, but I do like the modal editing scheme. I enjoy rarely having to take my hands off the home row of the keyboard.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>~/Now</title>
+      <link>http://localhost:1313/now/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/now/</guid>
+      <description>QuantusSports Working on incorporating PlayerRankings into the site. Tweaking the mobile layout. Gathering data for a new sport 👀 Other Picking away at a list of smaller projects. Writing for this site. </description>
+      <content:encoded><![CDATA[<h3 id="quantussports">QuantusSports</h3>
+<ul>
+<li>Working on incorporating PlayerRankings into the site.</li>
+<li>Tweaking the mobile layout.</li>
+<li>Gathering data for a new sport 👀</li>
+</ul>
+<h3 id="other">Other</h3>
+<ul>
+<li>Picking away at a list of smaller projects.</li>
+<li>Writing for this site.</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>~/Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>QuantusSports | May 2025 - Present Python, Flask, HTML, CSS, JavaScript, Vercel&#xA;QuantusSports is a sports analytics and statistics project I started back in May 2025. It began as an Elo system for MLB baseball games, where point differentials were taken into account. Therefore a blowout win would reward a team more than a close game. I have since ported it over to hockey and basketball as well, branding it under one unified name, Quantus.</description>
+      <content:encoded><![CDATA[<style>
+h1{
+	font-size:1.5em;
+}
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content:center;
+}
+.image-row> img{ max-width: 35%;}
+p:has(em) {
+    text-align:center;
+}
+</style>
+<h3 class="center" id="quantussportshttpsquantussportsvercelapp--may-2025---present"><a href="https://quantussports.vercel.app/">QuantusSports</a> | May 2025 - Present</h3>
+<p><em>Python, Flask, HTML, CSS, JavaScript, Vercel</em></p>
+<div class="image-row">
+  <img src="/projects/quantussports-screenshot1.png" alt="QuantusBasketball ratings page">
+  <img src="/projects/quantussports-screenshot2.png" alt="QuantusBaseball predictions page">
+  <img src="/projects/quantussports-screenshot3.png" alt="QuantusHockey team page">
+</div>
+<p>QuantusSports is a sports analytics and statistics project I started back in May 2025. It began as an Elo system for MLB baseball games, where point differentials were taken into account. Therefore a blowout win would reward a team more than a close game. I have since ported it over to hockey and basketball as well, branding it under one unified name, Quantus. Each sport has it&rsquo;s own BlueSky account where live updates are posted after each game. Each sport also features a predictions tab, where team ratings are used to make game predictions. As of May 2026, the model is nearly 65% accurate at predicting NBA games.</p>
+<hr>
+<h3 class="center" id="playerrankingshttpsgithubcomjmi06playerrankings--december-2025---present"><a href="https://github.com/jmi06/PlayerRankings">PlayerRankings</a> | December 2025 - Present</h3>
+<p><em>Python, Pandas</em></p>
+<div class="image-row">
+  <img src="/projects/pvb-screenshot2.png" style='max-width:45%;' alt="Example of ratings">
+  <img src="/projects/pvb-screenshot1.png" style='max-width:45%;' alt="File with at bats">
+</div>
+<p>I created a Pitcher vs. Batter model to determine who is the best baseball player in MLB. It uses a similar formula to Quantus, except it treats every at-bat as it&rsquo;s own game, and the result of that at-bat determines how much the rating is affected by. For example, if the batter hits a home run, it will impact their rating more than if they draw a walk. Similarly for pitchers, if they strikeout a batter, it will impact their rating more than a routine out. It also takes into account the opponents rating, if an ace gives up a home run to a poor hitter, their rating will take a bigger hit and vice versa. The plan is to integrate this into QuantusSports.</p>
+<hr>
+<h3 class="center" id="glyphhttpsgithubcomjmi06glyph--january-2026"><a href="https://github.com/jmi06/Glyph">Glyph</a> | January 2026</h3>
+<p><em>Python, HTML, CSS</em></p>
+<img src="/projects/glyph-screenshot.png" alt="Glyph example">
+<p>Glyph is a lightweight, TeX inspired markup language written in Python. It uses a syntax similar to TeX with it&rsquo;s heavy use of backward slashes and curly braces. The Python utilty converts the .glyph files to HTML.</p>
+<hr>
+<h3 class="center" id="meteohttpsgithubcomjmi06meteo--december-2025"><a href="https://github.com/jmi06/Meteo">Meteo</a> | December 2025</h3>
+<p><em>Python, Curses, Requests</em></p>
+<div class="image-row">
+  <img src="/projects/meteo-screenshot2.png" style='max-width:45%;' alt="Meteo current conditions">
+  <img src="/projects/meteo-screenshot1.png" style='max-width:45%;' alt="Meteo warning example">
+</div>
+<p>Meteo is a TUI weather client for Canadian Weather. It fetches weather data from Environment Canada&rsquo;s hidden API. It features current conditions, hourly forecasts, daily forecasts, and weather warnings/alerts.</p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

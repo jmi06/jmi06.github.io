@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" />
+<title>Combined Optimal Route: Audience friendly route optimizations for SailGP | Jack Ibsen</title>
+<meta name="title" content="Combined Optimal Route: Audience friendly route optimizations for SailGP" />
+<meta name="description" content="This project won third place at the 13th DeepSense Ocean of Data Challenge
+In SailGP, each team takes a slightly different path in order to capitalize on the best wind conditions. Combined Optimal Route (COR) takes the path of every team, and tries to find the most optimal route between them.
+If two cars are racing on a track, one on the inside, one on the outside, which car&rsquo;s path will be faster?" />
+<meta name="author" content="Jack Ibsen" />
+<meta name="keywords" content="sports,data-science,hackathon," />
+
+
+
+
+
+
+  
+  <meta property="og:url" content="http://localhost:1313/articles/cor/">
+  <meta property="og:site_name" content="Jack Ibsen">
+  <meta property="og:title" content="Combined Optimal Route: Audience friendly route optimizations for SailGP">
+  <meta property="og:description" content="This project won third place at the 13th DeepSense Ocean of Data Challenge
+In SailGP, each team takes a slightly different path in order to capitalize on the best wind conditions. Combined Optimal Route (COR) takes the path of every team, and tries to find the most optimal route between them.
+If two cars are racing on a track, one on the inside, one on the outside, which car’s path will be faster?">
+  <meta property="og:locale" content="en_CA">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="articles">
+    <meta property="article:published_time" content="2026-07-09T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-07-09T00:00:00+00:00">
+    <meta property="article:tag" content="Sports">
+    <meta property="article:tag" content="Data-Science">
+    <meta property="article:tag" content="Hackathon">
+    <meta property="og:image" content="http://localhost:1313/images/share.webp">
+
+
+  
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/images/share.webp">
+  <meta name="twitter:title" content="Combined Optimal Route: Audience friendly route optimizations for SailGP">
+  <meta name="twitter:description" content="This project won third place at the 13th DeepSense Ocean of Data Challenge
+In SailGP, each team takes a slightly different path in order to capitalize on the best wind conditions. Combined Optimal Route (COR) takes the path of every team, and tries to find the most optimal route between them.
+If two cars are racing on a track, one on the inside, one on the outside, which car’s path will be faster?">
+
+
+  
+  
+  <meta itemprop="name" content="Combined Optimal Route: Audience friendly route optimizations for SailGP">
+  <meta itemprop="description" content="This project won third place at the 13th DeepSense Ocean of Data Challenge
+In SailGP, each team takes a slightly different path in order to capitalize on the best wind conditions. Combined Optimal Route (COR) takes the path of every team, and tries to find the most optimal route between them.
+If two cars are racing on a track, one on the inside, one on the outside, which car’s path will be faster?">
+  <meta itemprop="datePublished" content="2026-07-09T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-07-09T00:00:00+00:00">
+  <meta itemprop="wordCount" content="406">
+  <meta itemprop="image" content="http://localhost:1313/images/share.webp">
+  <meta itemprop="keywords" content="Sports,Data-Science,Hackathon">
+
+<meta name="referrer" content="no-referrer-when-downgrade" />
+
+  
+  <link href="/original.min.css" rel="stylesheet">
+
+  
+
+  
+
+  
+</head>
+
+<body>
+  <header><a class="skip-link" href="#main-content">Skip to main content</a>
+
+<a href="/" class="title"><h1>Jack Ibsen</h1></a>
+<nav>
+  <a href="/articles">Articles</a>
+
+  <a href="/projects">Projects</a>
+
+  <a href="/computing">Computing</a>
+
+  <a href="/now">Now</a>
+
+
+
+
+
+
+
+
+</nav>
+</header>
+  <main id="main-content">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.css" integrity="sha384-vlBdW0r3AcZO/HboRPznQNowvexd3fY8qHOWkBi5q7KGgqJ+F48+DceybYmrVbmB" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.js" integrity="sha384-AtrdNsnxl/75rvBneBVH7DtOvCxSVahR2zWqle1coBKd8DEmLoviqNeJSx64gNAs" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/contrib/auto-render.min.js" integrity="sha384-bjyGPfbij8/NDKJhSGZNP/khQVgtHUE5exjm4Ydllo42FwIgYsdLO2lXGmRBf5Mz" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+<h1>Combined Optimal Route: Audience friendly route optimizations for SailGP</h1>
+<p class="byline">
+  <time datetime='2026-07-09' pubdate>
+    2026-07-09
+  </time>
+  · Jack Ibsen
+</p>
+
+<content>
+  <p><em>This project won third place at the <a href="https://deepsense.ca/ocean-of-data-challenge/">13th DeepSense Ocean of Data Challenge</a></em></p>
+<p>In SailGP, each team takes a slightly different path in order to capitalize on the best wind conditions. Combined Optimal Route (COR) takes the path of every team, and tries to find the most optimal route between them.</p>
+<p>If two cars are racing on a track, one on the inside, one on the outside, which car&rsquo;s path will be faster? COR takes this one step further, asking instead: is there a combination of both routes that is actually the fastest?</p>
+<p><img alt="GIF example of combining routes" src="/cor/racecar.gif"></p>
+<p>For this project, I was given sensor data collected at a frequency of 1Hz across all competing teams, and all races for two SailGP events.</p>
+<p>Every second of a leg is represented as a node in a directed graph. Each node contains the boat&rsquo;s heading, coordinates, the current wind speed, wind direction, and time elapsed during the leg. Directed edges are then connected between every node at time \(t\) to every other node at time \(t+1\)</p>
+<p>In order to determine how favourable the conditions are to travel between nodes, we apply a weight to our edges. This weight is known as our penalty, the higher the number, the less favourable and realistic the path becomes. The penalty formula is as follows.</p>
+\[Penalty = d(1000 + |h_{w} - h_{b}|)(cos(s))\]
+<p>Where:</p>
+<ul>
+<li>\(d\) is the distance between nodes.</li>
+<li>\(s\) is the speed of the wind.</li>
+<li>\(h_{w}\) is the heading of the wind.</li>
+<li>\(h_{b}\) is the heading of the boat.</li>
+</ul>
+<p>Dijsktra&rsquo;s algorithm is then run on our network to find the route with the lowest combined penalty. This in turn, becomes our most optimal route.</p>
+<p><img alt="Examples of Combined Optimal Routes" src="/cor/example_routes.jpg"></p>
+<p>Combined Optimal Route is not a perfect solution. For starters, the teams do not all pass these points at the same time. What might have been ideal conditions when the first place team sailed through, may not be ideal by the time the last place team reaches that point. It also does not take into account the real physics of these boats. A catamaran is not able to instantaneously take a 90 degree turn. But Combined Optimal Route is not meant to be a perfect solution. It is meant to allow a television audience to compare their favourite team&rsquo;s decisions, and how they chose to traverse the course. It gives the viewer a quick glance at how efficient each team&rsquo;s route was, and what theoretically could have been the best possible route.</p>
+
+</content>
+<p>
+  
+    <a class="blog-tags" href="/tags/sports/">#sports</a>
+  
+    <a class="blog-tags" href="/tags/data-science/">#data-science</a>
+  
+    <a class="blog-tags" href="/tags/hackathon/">#hackathon</a>
+  
+</p>
+
+
+
+
+  </main>
+  <footer><small>
+  Jack Ibsen | Made on Earth 🌎
+</small></footer>
+
+    
+</body>
+
+</html>
