@@ -12,6 +12,7 @@ h1{
   gap: 1rem;
   justify-content:center;
 }
+
 .image-row> img{ max-width: 35%;}
 p:has(em) {
     text-align:center;

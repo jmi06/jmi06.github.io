@@ -36,6 +36,40 @@
 ]]></content:encoded>
     </item>
     <item>
+      <title>xAdvantage: Using Player Percentages to Determine Curling Score Differentials</title>
+      <link>http://localhost:1313/articles/xmargin/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/xmargin/</guid>
+      <description>Introduction Hook removing luck from the equation Curling has no such stat The solution Methodology We&amp;rsquo;re gonna use XGBOOST Where I found the data the features I engineered Results - The model - The results - Notable moments - men vs women Conclusion How this can be used/applied </description>
+      <content:encoded><![CDATA[<h2 id="introduction">Introduction</h2>
+<ul>
+<li>Hook
+<ul>
+<li>removing luck from the equation</li>
+</ul>
+</li>
+<li>Curling has no such stat</li>
+<li>The solution</li>
+</ul>
+<h2 id="methodology">Methodology</h2>
+<ul>
+<li>We&rsquo;re gonna use XGBOOST</li>
+<li>Where I found the data</li>
+<li>the features I engineered</li>
+</ul>
+<h2 id="results">Results</h2>
+<pre><code>- The model
+- The results
+- Notable moments
+- men vs women
+</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<ul>
+<li>How this can be used/applied</li>
+</ul>
+]]></content:encoded>
+    </item>
+    <item>
       <title>~/Computing</title>
       <link>http://localhost:1313/computing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -58,25 +92,29 @@
       <link>http://localhost:1313/now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/now/</guid>
-      <description>QuantusSports Working on incorporating PlayerRankings into the site. Tweaking the mobile layout. Gathering data for a new sport 👀 Other Picking away at a list of smaller projects. Writing for this site. </description>
+      <description>QuantusSports Gathering data for a new sport. Building new and interesting metrics, utilizing machine learning. Other Picking away at a list of small project ideas. Internet radio stream scheduler. Building libraries to make data scraping easier Learning Go </description>
       <content:encoded><![CDATA[<h3 id="quantussports">QuantusSports</h3>
 <ul>
-<li>Working on incorporating PlayerRankings into the site.</li>
-<li>Tweaking the mobile layout.</li>
-<li>Gathering data for a new sport 👀</li>
+<li>Gathering data for a new sport.</li>
+<li>Building new and interesting metrics, utilizing machine learning.</li>
 </ul>
 <h3 id="other">Other</h3>
 <ul>
-<li>Picking away at a list of smaller projects.</li>
-<li>Writing for this site.</li>
+<li>Picking away at a list of small project ideas.
+<ul>
+<li>Internet radio stream scheduler.</li>
+<li>Building libraries to make data scraping easier</li>
+<li>Learning Go</li>
+</ul>
+</li>
 </ul>
 ]]></content:encoded>
     </item>
     <item>
       <title>~/Projects</title>
-      <link>http://localhost:1313/projects/</link>
+      <link>http://localhost:1313/projects-old/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/</guid>
+      <guid>http://localhost:1313/projects-old/</guid>
       <description>QuantusSports | May 2025 - Present Python, Flask, HTML, CSS, JavaScript, Vercel&#xA;QuantusSports is a sports analytics and statistics project I started back in May 2025. It began as an Elo system for MLB baseball games, where point differentials were taken into account. Therefore a blowout win would reward a team more than a close game. I have since ported it over to hockey and basketball as well, branding it under one unified name, Quantus.</description>
       <content:encoded><![CDATA[<style>
 h1{
@@ -88,6 +126,7 @@ h1{
   gap: 1rem;
   justify-content:center;
 }
+
 .image-row> img{ max-width: 35%;}
 p:has(em) {
     text-align:center;
@@ -122,6 +161,25 @@ p:has(em) {
   <img src="/projects/meteo-screenshot1.png" style='max-width:45%;' alt="Meteo warning example">
 </div>
 <p>Meteo is a TUI weather client for Canadian Weather. It fetches weather data from Environment Canada&rsquo;s hidden API. It features current conditions, hourly forecasts, daily forecasts, and weather warnings/alerts.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>~/Projects/QuantusSports</title>
+      <link>http://localhost:1313/projects/quantussports/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/quantussports/</guid>
+      <description>QuantusSports | May 2025 - Present Python, Flask, HTML, CSS, JavaScript, Vercel&#xA;QuantusSports is a sports analytics and statistics project I started in May 2025. It began as an Elo system for MLB games where point differentials were taken into account. I then ported the system over to the NHL and NBA as well.&#xA;The project now houses a number of rating systems, including the original QuantusRatings, and the graph theory based QuantusIndex.</description>
+      <content:encoded><![CDATA[<h3 class="center" id="quantussportshttpsquantussportsvercelapp--may-2025---present"><a href="https://quantussports.vercel.app/">QuantusSports</a> | May 2025 - Present</h3>
+<p><em>Python, Flask, HTML, CSS, JavaScript, Vercel</em></p>
+<div class="image-row">
+<p><img alt="QuantusBasketball ratings page" src="/projects/quantussports-screenshot1.png">
+<img alt="QuantusHockey team page" src="/projects/quantussports-screenshot3.png"></p>
+  <!-- ![QuantusBaseball predictions page](projects/quantussports-screenshot4.png) -->
+</div>
+<p>QuantusSports is a sports analytics and statistics project I started in May 2025. It began as an Elo system for MLB games where point differentials were taken into account. I then ported the system over to the NHL and NBA as well.</p>
+<p>The project now houses a number of rating systems, including the original QuantusRatings, and the graph theory based QuantusIndex.</p>
+<p>Each league has it&rsquo;s own BlueSky account where live updates are posted after each game. Each league also features a predictions page, where team ratings are used to make game predictions.</p>
+<p>More information about QuantusSports can be found on the <a href="https://quantussports.vercel.app/about">about page</a></p>
 ]]></content:encoded>
     </item>
   </channel>

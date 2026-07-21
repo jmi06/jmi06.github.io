@@ -55,17 +55,22 @@
 </head>
 
 <body>
+  <div id='time'>
+	<span id='date'>Date</span>
+	<span id='hour'>Time</span>
+  </div>
+
   <header><a class="skip-link" href="#main-content">Skip to main content</a>
 
 <a href="/" class="title"><h1>Jack Ibsen</h1></a>
 <nav>
-  <a href="/articles">Articles</a>
 
-  <a href="/projects">Projects</a>
 
-  <a href="/computing">Computing</a>
+  <a class="nav-link" href="/projects">Projects</a>
 
-  <a href="/now">Now</a>
+  <a class="nav-link" href="/articles">Articles</a>
+
+  <a class="nav-link" href="/now">Now</a>
 
 
 
@@ -75,8 +80,17 @@
 
 
 </nav>
+
+
+
 </header>
   <main id="main-content">
+
+<style>
+#main-content{
+	border:none;
+}
+</style>
 
 <h1>~/Computing</h1>
 <p class="byline">
@@ -112,4 +126,6 @@
     
 </body>
 
+
+<script src="scripts.js"></script>
 </html>

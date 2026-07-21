@@ -57,17 +57,22 @@
 </head>
 
 <body>
+  <div id='time'>
+	<span id='date'>Date</span>
+	<span id='hour'>Time</span>
+  </div>
+
   <header><a class="skip-link" href="#main-content">Skip to main content</a>
 
 <a href="/" class="title"><h1>Jack Ibsen</h1></a>
 <nav>
-  <a href="/articles">Articles</a>
 
-  <a href="/projects">Projects</a>
 
-  <a href="/computing">Computing</a>
+  <a class="nav-link" href="/projects">Projects</a>
 
-  <a href="/now">Now</a>
+  <a class="nav-link" href="/articles">Articles</a>
+
+  <a class="nav-link" href="/now">Now</a>
 
 
 
@@ -77,6 +82,9 @@
 
 
 </nav>
+
+
+
 </header>
   <main id="main-content">
 <content>
@@ -108,6 +116,19 @@
       
     </li>
     
+    <li>
+      <span>
+        <i>
+          <time datetime='2026-07-09' pubdate>
+            2026-07-09
+          </time>
+        </i>
+      </span>
+      
+        <a href="/articles/xmargin/">xAdvantage: Using Player Percentages to Determine Curling Score Differentials</a>
+      
+    </li>
+    
   </ul>
 </content>
 
@@ -119,4 +140,6 @@
     
 </body>
 
+
+<script src="scripts.js"></script>
 </html>

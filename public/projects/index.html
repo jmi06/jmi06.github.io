@@ -8,10 +8,9 @@
 <link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" />
 <title>~/Projects | Jack Ibsen</title>
 <meta name="title" content="~/Projects" />
-<meta name="description" content="QuantusSports | May 2025 - Present Python, Flask, HTML, CSS, JavaScript, Vercel
-QuantusSports is a sports analytics and statistics project I started back in May 2025. It began as an Elo system for MLB baseball games, where point differentials were taken into account. Therefore a blowout win would reward a team more than a close game. I have since ported it over to hockey and basketball as well, branding it under one unified name, Quantus." />
+<meta name="description" content="jmi06" />
 <meta name="author" content="" />
-<meta name="keywords" content="" />
+<meta name="keywords" content="data-science,hackathon,sports," />
 
 
 
@@ -22,10 +21,18 @@ QuantusSports is a sports analytics and statistics project I started back in May
   <meta property="og:url" content="http://localhost:1313/projects/">
   <meta property="og:site_name" content="Jack Ibsen">
   <meta property="og:title" content="~/Projects">
-  <meta property="og:description" content="QuantusSports | May 2025 - Present Python, Flask, HTML, CSS, JavaScript, Vercel
-QuantusSports is a sports analytics and statistics project I started back in May 2025. It began as an Elo system for MLB baseball games, where point differentials were taken into account. Therefore a blowout win would reward a team more than a close game. I have since ported it over to hockey and basketball as well, branding it under one unified name, Quantus.">
+  <meta property="og:description" content="QuantusSports Python, Flask, JavaScript
+Unique Sports Data Metrics
+Combined Optimal Route (COR) Python, Matplotlib
+SailGP Optimization Visualization
+PlayerRankings Python, Pandas
+Baseball Player Comparison Model
+Meteo Python, Curses
+Canadian Weather TUI
+Glyph Python
+TeX-Like Markup Language">
   <meta property="og:locale" content="en_CA">
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="website">
     <meta property="og:image" content="http://localhost:1313/images/share.webp">
 
 
@@ -34,16 +41,32 @@ QuantusSports is a sports analytics and statistics project I started back in May
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/images/share.webp">
   <meta name="twitter:title" content="~/Projects">
-  <meta name="twitter:description" content="QuantusSports | May 2025 - Present Python, Flask, HTML, CSS, JavaScript, Vercel
-QuantusSports is a sports analytics and statistics project I started back in May 2025. It began as an Elo system for MLB baseball games, where point differentials were taken into account. Therefore a blowout win would reward a team more than a close game. I have since ported it over to hockey and basketball as well, branding it under one unified name, Quantus.">
+  <meta name="twitter:description" content="QuantusSports Python, Flask, JavaScript
+Unique Sports Data Metrics
+Combined Optimal Route (COR) Python, Matplotlib
+SailGP Optimization Visualization
+PlayerRankings Python, Pandas
+Baseball Player Comparison Model
+Meteo Python, Curses
+Canadian Weather TUI
+Glyph Python
+TeX-Like Markup Language">
 
 
   
   
   <meta itemprop="name" content="~/Projects">
-  <meta itemprop="description" content="QuantusSports | May 2025 - Present Python, Flask, HTML, CSS, JavaScript, Vercel
-QuantusSports is a sports analytics and statistics project I started back in May 2025. It began as an Elo system for MLB baseball games, where point differentials were taken into account. Therefore a blowout win would reward a team more than a close game. I have since ported it over to hockey and basketball as well, branding it under one unified name, Quantus.">
-  <meta itemprop="wordCount" content="332">
+  <meta itemprop="description" content="QuantusSports Python, Flask, JavaScript
+Unique Sports Data Metrics
+Combined Optimal Route (COR) Python, Matplotlib
+SailGP Optimization Visualization
+PlayerRankings Python, Pandas
+Baseball Player Comparison Model
+Meteo Python, Curses
+Canadian Weather TUI
+Glyph Python
+TeX-Like Markup Language">
+  <meta itemprop="wordCount" content="35">
   <meta itemprop="image" content="http://localhost:1313/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -55,21 +78,27 @@ QuantusSports is a sports analytics and statistics project I started back in May
 
   
 
+  <link rel="alternate" type="application/rss+xml" href="http://localhost:1313/projects/index.xml" title="Jack Ibsen" />
   
 </head>
 
 <body>
+  <div id='time'>
+	<span id='date'>Date</span>
+	<span id='hour'>Time</span>
+  </div>
+
   <header><a class="skip-link" href="#main-content">Skip to main content</a>
 
 <a href="/" class="title"><h1>Jack Ibsen</h1></a>
 <nav>
-  <a href="/articles">Articles</a>
 
-  <a href="/projects">Projects</a>
 
-  <a href="/computing">Computing</a>
+  <a class="nav-link" href="/projects">Projects</a>
 
-  <a href="/now">Now</a>
+  <a class="nav-link" href="/articles">Articles</a>
+
+  <a class="nav-link" href="/now">Now</a>
 
 
 
@@ -79,8 +108,17 @@ QuantusSports is a sports analytics and statistics project I started back in May
 
 
 </nav>
+
+
+
 </header>
   <main id="main-content">
+
+<style>
+#main-content{
+	border:none;
+}
+</style>
 
 <h1>~/Projects</h1>
 <p class="byline">
@@ -90,49 +128,84 @@ QuantusSports is a sports analytics and statistics project I started back in May
 
 <content>
   <style>
-h1{
-	font-size:1.5em;
-}
-.image-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content:center;
-}
-.image-row> img{ max-width: 35%;}
-p:has(em) {
-    text-align:center;
-}
+	#project-container{
+		margin-top: 30px;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+    p:has(em){
+    	margin:0 !important;
+    	
+    }
+
+    .project{
+	  flex-direction: column;
+	  margin-bottom: 35px;
+	  flex-basis: 42%;
+	  background: rgba(46, 52, 64,0.5);
+	  border: 1px rgba(46, 52, 64,0.2);
+	  border-radius: 13px;
+    }
+    .project > *{
+        text-align:center;
+    }
+    p em{
+    	margin:0;
+    }
+    .project > p{
+        margin: 10px;
+    }
+
+    .project > h3{
+    	margin-bottom:0;
+    	padding:0;
+    }
+
+    .project img{
+        display:none;
+        margin:auto;
+        width: 250px;
+        height: auto;
+    }
+
+    
+
+
+
 </style>
-<h3 class="center" id="quantussportshttpsquantussportsvercelapp--may-2025---present"><a href="https://quantussports.vercel.app/">QuantusSports</a> | May 2025 - Present</h3>
-<p><em>Python, Flask, HTML, CSS, JavaScript, Vercel</em></p>
-<div class="image-row">
-  <img src="/projects/quantussports-screenshot1.png" alt="QuantusBasketball ratings page">
-  <img src="/projects/quantussports-screenshot2.png" alt="QuantusBaseball predictions page">
-  <img src="/projects/quantussports-screenshot3.png" alt="QuantusHockey team page">
+<div id='project-container'>
+<div id="quantus-sports" class='project'>
+<h3 id="quantussportsquantussports"><a href="/projects/quantussports/">QuantusSports</a></h3>
+<p><em>Python, Flask, JavaScript</em></p>
+<p><img alt="QuantusBasketball ratings page" src="/projects/quantussports-screenshot5.png"></p>
+<p>Unique Sports Data Metrics</p>
 </div>
-<p>QuantusSports is a sports analytics and statistics project I started back in May 2025. It began as an Elo system for MLB baseball games, where point differentials were taken into account. Therefore a blowout win would reward a team more than a close game. I have since ported it over to hockey and basketball as well, branding it under one unified name, Quantus. Each sport has it&rsquo;s own BlueSky account where live updates are posted after each game. Each sport also features a predictions tab, where team ratings are used to make game predictions. As of May 2026, the model is nearly 65% accurate at predicting NBA games.</p>
-<hr>
-<h3 class="center" id="playerrankingshttpsgithubcomjmi06playerrankings--december-2025---present"><a href="https://github.com/jmi06/PlayerRankings">PlayerRankings</a> | December 2025 - Present</h3>
+<div id="cor" class='project'>
+<h3 id="combined-optimal-route-corarticlescor"><a href="/articles/cor/">Combined Optimal Route (COR)</a></h3>
+<p><em>Python, Matplotlib</em></p>
+<p><img alt="PlayerRankings Dataset" src="/projects/pvb-screenshot2.png"></p>
+<p>SailGP Optimization Visualization</p>
+</div>
+<div id="player-rankings" class='project'>
+<h3 id="playerrankingsplayerrankings"><a href="PlayerRankings">PlayerRankings</a></h3>
 <p><em>Python, Pandas</em></p>
-<div class="image-row">
-  <img src="/projects/pvb-screenshot2.png" style='max-width:45%;' alt="Example of ratings">
-  <img src="/projects/pvb-screenshot1.png" style='max-width:45%;' alt="File with at bats">
+<p><img alt="PlayerRankings Dataset" src="/projects/pvb-screenshot2.png"></p>
+<p>Baseball Player Comparison Model</p>
 </div>
-<p>I created a Pitcher vs. Batter model to determine who is the best baseball player in MLB. It uses a similar formula to Quantus, except it treats every at-bat as it&rsquo;s own game, and the result of that at-bat determines how much the rating is affected by. For example, if the batter hits a home run, it will impact their rating more than if they draw a walk. Similarly for pitchers, if they strikeout a batter, it will impact their rating more than a routine out. It also takes into account the opponents rating, if an ace gives up a home run to a poor hitter, their rating will take a bigger hit and vice versa. The plan is to integrate this into QuantusSports.</p>
-<hr>
-<h3 class="center" id="glyphhttpsgithubcomjmi06glyph--january-2026"><a href="https://github.com/jmi06/Glyph">Glyph</a> | January 2026</h3>
-<p><em>Python, HTML, CSS</em></p>
-<img src="/projects/glyph-screenshot.png" alt="Glyph example">
-<p>Glyph is a lightweight, TeX inspired markup language written in Python. It uses a syntax similar to TeX with it&rsquo;s heavy use of backward slashes and curly braces. The Python utilty converts the .glyph files to HTML.</p>
-<hr>
-<h3 class="center" id="meteohttpsgithubcomjmi06meteo--december-2025"><a href="https://github.com/jmi06/Meteo">Meteo</a> | December 2025</h3>
-<p><em>Python, Curses, Requests</em></p>
-<div class="image-row">
-  <img src="/projects/meteo-screenshot2.png" style='max-width:45%;' alt="Meteo current conditions">
-  <img src="/projects/meteo-screenshot1.png" style='max-width:45%;' alt="Meteo warning example">
+<div id="glyph" class='project'>
+<h3 id="meteometeo"><a href="Meteo">Meteo</a></h3>
+<p><em>Python, Curses</em></p>
+<p><img alt="Example of Glyph" src="/projects/meteo-screenshot1.png"></p>
+<p>Canadian Weather TUI</p>
 </div>
-<p>Meteo is a TUI weather client for Canadian Weather. It fetches weather data from Environment Canada&rsquo;s hidden API. It features current conditions, hourly forecasts, daily forecasts, and weather warnings/alerts.</p>
+<div id="player-rankings" class='project'>
+<h3 id="glyphglyph"><a href="Glyph">Glyph</a></h3>
+<p><em>Python</em></p>
+<p><img alt="Example of Glyph" src="/projects/glyph-screenshot.png"></p>
+<p>TeX-Like Markup Language</p>
+</div>
+</div>
 
 </content>
 <p>
@@ -150,4 +223,6 @@ p:has(em) {
     
 </body>
 
+
+<script src="scripts.js"></script>
 </html>

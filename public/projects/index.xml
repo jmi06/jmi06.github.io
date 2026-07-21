@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>~/Projects on Jack Ibsen</title>
+    <link>http://localhost:1313/projects/</link>
+    <description>Recent content in ~/Projects on Jack Ibsen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-CA</language>
+    <copyright>Jack Ibsen</copyright>
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>~/Projects/QuantusSports</title>
+      <link>http://localhost:1313/projects/quantussports/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/quantussports/</guid>
+      <description>QuantusSports | May 2025 - Present Python, Flask, HTML, CSS, JavaScript, Vercel&#xA;QuantusSports is a sports analytics and statistics project I started in May 2025. It began as an Elo system for MLB games where point differentials were taken into account. I then ported the system over to the NHL and NBA as well.&#xA;The project now houses a number of rating systems, including the original QuantusRatings, and the graph theory based QuantusIndex.</description>
+      <content:encoded><![CDATA[<h3 class="center" id="quantussportshttpsquantussportsvercelapp--may-2025---present"><a href="https://quantussports.vercel.app/">QuantusSports</a> | May 2025 - Present</h3>
+<p><em>Python, Flask, HTML, CSS, JavaScript, Vercel</em></p>
+<div class="image-row">
+<p><img alt="QuantusBasketball ratings page" src="/projects/quantussports-screenshot1.png">
+<img alt="QuantusHockey team page" src="/projects/quantussports-screenshot3.png"></p>
+  <!-- ![QuantusBaseball predictions page](projects/quantussports-screenshot4.png) -->
+</div>
+<p>QuantusSports is a sports analytics and statistics project I started in May 2025. It began as an Elo system for MLB games where point differentials were taken into account. I then ported the system over to the NHL and NBA as well.</p>
+<p>The project now houses a number of rating systems, including the original QuantusRatings, and the graph theory based QuantusIndex.</p>
+<p>Each league has it&rsquo;s own BlueSky account where live updates are posted after each game. Each league also features a predictions page, where team ratings are used to make game predictions.</p>
+<p>More information about QuantusSports can be found on the <a href="https://quantussports.vercel.app/about">about page</a></p>
+]]></content:encoded>
+    </item>
+  </channel>
+</rss>

@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="http://localhost:1313/images/favicon.png" />
 <title>~/Now | Jack Ibsen</title>
 <meta name="title" content="~/Now" />
-<meta name="description" content="QuantusSports Working on incorporating PlayerRankings into the site. Tweaking the mobile layout. Gathering data for a new sport 👀 Other Picking away at a list of smaller projects. Writing for this site. " />
+<meta name="description" content="QuantusSports Gathering data for a new sport. Building new and interesting metrics, utilizing machine learning. Other Picking away at a list of small project ideas. Internet radio stream scheduler. Building libraries to make data scraping easier Learning Go " />
 <meta name="author" content="" />
 <meta name="keywords" content="" />
 
@@ -21,7 +21,7 @@
   <meta property="og:url" content="http://localhost:1313/now/">
   <meta property="og:site_name" content="Jack Ibsen">
   <meta property="og:title" content="~/Now">
-  <meta property="og:description" content="QuantusSports Working on incorporating PlayerRankings into the site. Tweaking the mobile layout. Gathering data for a new sport 👀 Other Picking away at a list of smaller projects. Writing for this site. ">
+  <meta property="og:description" content="QuantusSports Gathering data for a new sport. Building new and interesting metrics, utilizing machine learning. Other Picking away at a list of small project ideas. Internet radio stream scheduler. Building libraries to make data scraping easier Learning Go ">
   <meta property="og:locale" content="en_CA">
   <meta property="og:type" content="article">
     <meta property="og:image" content="http://localhost:1313/images/share.webp">
@@ -32,14 +32,14 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="http://localhost:1313/images/share.webp">
   <meta name="twitter:title" content="~/Now">
-  <meta name="twitter:description" content="QuantusSports Working on incorporating PlayerRankings into the site. Tweaking the mobile layout. Gathering data for a new sport 👀 Other Picking away at a list of smaller projects. Writing for this site. ">
+  <meta name="twitter:description" content="QuantusSports Gathering data for a new sport. Building new and interesting metrics, utilizing machine learning. Other Picking away at a list of small project ideas. Internet radio stream scheduler. Building libraries to make data scraping easier Learning Go ">
 
 
   
   
   <meta itemprop="name" content="~/Now">
-  <meta itemprop="description" content="QuantusSports Working on incorporating PlayerRankings into the site. Tweaking the mobile layout. Gathering data for a new sport 👀 Other Picking away at a list of smaller projects. Writing for this site. ">
-  <meta itemprop="wordCount" content="32">
+  <meta itemprop="description" content="QuantusSports Gathering data for a new sport. Building new and interesting metrics, utilizing machine learning. Other Picking away at a list of small project ideas. Internet radio stream scheduler. Building libraries to make data scraping easier Learning Go ">
+  <meta itemprop="wordCount" content="38">
   <meta itemprop="image" content="http://localhost:1313/images/share.webp">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
@@ -55,17 +55,22 @@
 </head>
 
 <body>
+  <div id='time'>
+	<span id='date'>Date</span>
+	<span id='hour'>Time</span>
+  </div>
+
   <header><a class="skip-link" href="#main-content">Skip to main content</a>
 
 <a href="/" class="title"><h1>Jack Ibsen</h1></a>
 <nav>
-  <a href="/articles">Articles</a>
 
-  <a href="/projects">Projects</a>
 
-  <a href="/computing">Computing</a>
+  <a class="nav-link" href="/projects">Projects</a>
 
-  <a href="/now">Now</a>
+  <a class="nav-link" href="/articles">Articles</a>
+
+  <a class="nav-link" href="/now">Now</a>
 
 
 
@@ -75,8 +80,17 @@
 
 
 </nav>
+
+
+
 </header>
   <main id="main-content">
+
+<style>
+#main-content{
+	border:none;
+}
+</style>
 
 <h1>~/Now</h1>
 <p class="byline">
@@ -87,14 +101,18 @@
 <content>
   <h3 id="quantussports">QuantusSports</h3>
 <ul>
-<li>Working on incorporating PlayerRankings into the site.</li>
-<li>Tweaking the mobile layout.</li>
-<li>Gathering data for a new sport 👀</li>
+<li>Gathering data for a new sport.</li>
+<li>Building new and interesting metrics, utilizing machine learning.</li>
 </ul>
 <h3 id="other">Other</h3>
 <ul>
-<li>Picking away at a list of smaller projects.</li>
-<li>Writing for this site.</li>
+<li>Picking away at a list of small project ideas.
+<ul>
+<li>Internet radio stream scheduler.</li>
+<li>Building libraries to make data scraping easier</li>
+<li>Learning Go</li>
+</ul>
+</li>
 </ul>
 
 </content>
@@ -113,4 +131,6 @@
     
 </body>
 
+
+<script src="scripts.js"></script>
 </html>

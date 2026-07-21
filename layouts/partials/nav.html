@@ -1,5 +1,7 @@
+
+
 {{ range .Site.Menus.main.ByWeight }}
-  <a href="{{ .URL }}">{{ .Name }}</a>
+  <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
 {{ end }}
 
 <!-- Convert this page's translations into a dict -->

@@ -35,5 +35,39 @@
 <p>Combined Optimal Route is not a perfect solution. For starters, the teams do not all pass these points at the same time. What might have been ideal conditions when the first place team sailed through, may not be ideal by the time the last place team reaches that point. It also does not take into account the real physics of these boats. A catamaran is not able to instantaneously take a 90 degree turn. But Combined Optimal Route is not meant to be a perfect solution. It is meant to allow a television audience to compare their favourite team&rsquo;s decisions, and how they chose to traverse the course. It gives the viewer a quick glance at how efficient each team&rsquo;s route was, and what theoretically could have been the best possible route.</p>
 ]]></content:encoded>
     </item>
+    <item>
+      <title>xAdvantage: Using Player Percentages to Determine Curling Score Differentials</title>
+      <link>http://localhost:1313/articles/xmargin/</link>
+      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/xmargin/</guid>
+      <description>Introduction Hook removing luck from the equation Curling has no such stat The solution Methodology We&amp;rsquo;re gonna use XGBOOST Where I found the data the features I engineered Results - The model - The results - Notable moments - men vs women Conclusion How this can be used/applied </description>
+      <content:encoded><![CDATA[<h2 id="introduction">Introduction</h2>
+<ul>
+<li>Hook
+<ul>
+<li>removing luck from the equation</li>
+</ul>
+</li>
+<li>Curling has no such stat</li>
+<li>The solution</li>
+</ul>
+<h2 id="methodology">Methodology</h2>
+<ul>
+<li>We&rsquo;re gonna use XGBOOST</li>
+<li>Where I found the data</li>
+<li>the features I engineered</li>
+</ul>
+<h2 id="results">Results</h2>
+<pre><code>- The model
+- The results
+- Notable moments
+- men vs women
+</code></pre>
+<h2 id="conclusion">Conclusion</h2>
+<ul>
+<li>How this can be used/applied</li>
+</ul>
+]]></content:encoded>
+    </item>
   </channel>
 </rss>

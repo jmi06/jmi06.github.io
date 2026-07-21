@@ -41,21 +41,15 @@ enableRobotsTXT = true
     [languages.en.params]
       madeWith = "Made on Earth 🌎"
 
+  [[languages.en.menu.main]]
+      name = "Projects"
+      url = "/projects"
+      weight = 1
 
   [[languages.en.menu.main]]
       name = "Articles"
       url = "/articles"
-      weight = 1
-  
-  [[languages.en.menu.main]]
-      name = "Projects"
-      url = "/projects"
       weight = 2
-
-  [[languages.en.menu.main]]
-      name = "Computing"
-      url = "/computing"
-      weight = 3
 
   [[languages.en.menu.main]]
       name = "Now"

@@ -35,6 +35,11 @@
 </head>
 
 <body>
+  <div id='time'>
+	<span id='date'>Date</span>
+	<span id='hour'>Time</span>
+  </div>
+
   <header>
     {{- partial "header.html" . -}}
   </header>
@@ -51,4 +56,6 @@
   {{- partial "custom_body.html" . -}}
 </body>
 
+
+<script src="scripts.js"></script>
 </html>

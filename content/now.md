@@ -4,10 +4,11 @@ layout: "single page"
 ---
 
 ### QuantusSports
-- Working on incorporating PlayerRankings into the site.
-- Tweaking the mobile layout.
-- Gathering data for a new sport 👀 
+- Gathering data for a new sport.
+- Building new and interesting metrics, utilizing machine learning.
 
 ### Other
-- Picking away at a list of smaller projects.
-- Writing for this site.
+- Picking away at a list of small project ideas.
+	- Internet radio stream scheduler.
+	- Building libraries to make data scraping easier
+	- Learning Go
