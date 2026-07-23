@@ -75,6 +75,24 @@ async function getStatus(){
 	}
 }
 
-getStatus()
+
+/*
+* Displays the count of GitHub commits in the month.
+*/
+async function commitsThisMonth(){
+
+	const today = new Intl.DateTimeFormat().format(new Date());
+	const year = new Date().getFullYear()
+	const month = new Date().getMonth() + 1
+	console.log("year", year, "month", month, "today", today)
+	const request = await fetch(`https://api.github.com/search/commits?q=author:jmi06+author-date:${year}-${String(month).padStart(2, '0')}-01..${today}`)
+	const response = await request.json()
+
+	document.getElementById("commits-num").innerText = response['total_count']
+
+
+
+}
+
 
 timeAndDate()

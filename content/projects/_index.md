@@ -2,7 +2,6 @@
 title: "~/Projects"
 layout: "single page"
 ---
-
 <style>
 	#project-container{
 		margin-top: 30px;
@@ -16,12 +15,13 @@ layout: "single page"
     }
 
     .project{
+      display:flex;
 	  flex-direction: column;
 	  margin-bottom: 35px;
-	  flex-basis: 42%;
+	  /* flex-basis: 42%; */
 	  background: rgba(46, 52, 64,0.5);
 	  border: 1px rgba(46, 52, 64,0.2);
-	  border-radius: 13px;
+	  /* border-radius: 13px; */
     }
     .project > *{
         text-align:center;
@@ -35,6 +35,7 @@ layout: "single page"
 
     .project > h3{
     	margin-bottom:0;
+        margin:0;
     	padding:0;
     }
 
@@ -43,6 +44,7 @@ layout: "single page"
         margin:auto;
         width: 250px;
         height: auto;
+
     }
 
     
@@ -51,9 +53,10 @@ layout: "single page"
 
 </style>
 
+
 <div id='project-container'>
 
-<div id="quantus-sports" class='project'>
+<section id="quantus-sports" class='project'>
 
 ### [QuantusSports](QuantusSports)
 
@@ -63,9 +66,8 @@ layout: "single page"
 
 Unique Sports Data Metrics
 
-</div>
-
-<div id="cor" class='project'>
+</section>
+<section id="cor" class='project'>
 
 ### [Combined Optimal Route (COR)](/articles/COR)
 
@@ -75,9 +77,9 @@ Unique Sports Data Metrics
 
 SailGP Optimization Visualization
 
-</div>
+</section>
 
-<div id="player-rankings" class='project'>
+<section id="player-rankings" class='project'>
 
 ### [PlayerRankings](PlayerRankings)
 
@@ -87,11 +89,11 @@ SailGP Optimization Visualization
 
 Baseball Player Comparison Model
 
-</div>
+</section>
 
 
 
-<div id="glyph" class='project'>
+<section id="glyph" class='project'>
 
 ### [Meteo](Meteo)
 
@@ -100,9 +102,9 @@ Baseball Player Comparison Model
 ![Example of Glyph](/projects/meteo-screenshot1.png)
 
 Canadian Weather TUI
-</div>
+</section>
 
-<div id="player-rankings" class='project'>
+<section id="player-rankings" class='project'>
 
 ### [Glyph](Glyph)
 
@@ -112,7 +114,7 @@ Canadian Weather TUI
 
 TeX-Like Markup Language
 
-</div>
+</section>
 
 
 </div>

@@ -1,4 +1,8 @@
 {{ define "main" }}
+<section id="title-section">
+  <h1>{{ .Title }}</h1>
+</section>
+<section>
 <content>
   {{ if not .Data.Singular }}
     <div style='text-align:center;'>
@@ -34,4 +38,7 @@
     {{ end }}
   </ul>
 </content>
+</section>
+<script src="scripts.js"></script>
+
 {{ end }}

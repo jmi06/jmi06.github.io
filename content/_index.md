@@ -19,15 +19,16 @@ I am a second-year undergraduate Computer Science student at Dalhousie Universit
 
 GitHub - [jmi06](https://github.com/jmi06)  
 LinkedIn - [Jack Ibsen](https://www.linkedin.com/in/jackibsen/)  
-Mastodon - [jmi06@defcon.social](https://defcon.social/@jmi06)
+Mastodon - [@ibsen@mstdn.ca](https://mstdn.ca/@ibsen)
 
 Email - [Here](/contact)  
 </section>
 
-<section>
-GuestMap
+<section style="display: flex; align-items: center;">
+<div id="commits-month">
+<p style="text-align:center; "><span id="commits-num" style="font-size: 1.4rem; font-weight:bold;"></span><br>Commits<br>This Month</p>
+</div>
 </section>
-
 
 
 
@@ -43,8 +44,6 @@ Status:
 
 </div>
 
-
-
 <section>
 	
 
@@ -58,23 +57,16 @@ Status:
 - [~/Now](/now)
 	- What I am currently working on 
 
-
 </section>
-
-
-<section>
-
-## Recent Updates
-
-</section>
-
-
-
 
 
 <!-- Page Scripts -->
 <script src="scripts.js"></script>
-<script>getStatus()</script>
+<script>
+getStatus();
+commitsThisMonth()
+</script>
+
 
 
 

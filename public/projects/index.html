@@ -120,14 +120,19 @@ TeX-Like Markup Language">
 }
 </style>
 
-<h1>~/Projects</h1>
+
+<section id="title-section">
+  <h1>~/Projects</h1>
+</section>
+
+<section>
 <p class="byline">
-
+    
+    
+  </p>
   
-</p>
-
-<content>
-  <style>
+  <content>
+    <style>
 	#project-container{
 		margin-top: 30px;
 		display: flex;
@@ -140,12 +145,13 @@ TeX-Like Markup Language">
     }
 
     .project{
+      display:flex;
 	  flex-direction: column;
 	  margin-bottom: 35px;
-	  flex-basis: 42%;
+	  /* flex-basis: 42%; */
 	  background: rgba(46, 52, 64,0.5);
 	  border: 1px rgba(46, 52, 64,0.2);
-	  border-radius: 13px;
+	  /* border-radius: 13px; */
     }
     .project > *{
         text-align:center;
@@ -159,6 +165,7 @@ TeX-Like Markup Language">
 
     .project > h3{
     	margin-bottom:0;
+        margin:0;
     	padding:0;
     }
 
@@ -167,6 +174,7 @@ TeX-Like Markup Language">
         margin:auto;
         width: 250px;
         height: auto;
+
     }
 
     
@@ -175,44 +183,43 @@ TeX-Like Markup Language">
 
 </style>
 <div id='project-container'>
-<div id="quantus-sports" class='project'>
+<section id="quantus-sports" class='project'>
 <h3 id="quantussportsquantussports"><a href="/projects/quantussports/">QuantusSports</a></h3>
 <p><em>Python, Flask, JavaScript</em></p>
 <p><img alt="QuantusBasketball ratings page" src="/projects/quantussports-screenshot5.png"></p>
 <p>Unique Sports Data Metrics</p>
-</div>
-<div id="cor" class='project'>
+</section>
+<section id="cor" class='project'>
 <h3 id="combined-optimal-route-corarticlescor"><a href="/articles/cor/">Combined Optimal Route (COR)</a></h3>
 <p><em>Python, Matplotlib</em></p>
 <p><img alt="PlayerRankings Dataset" src="/projects/pvb-screenshot2.png"></p>
 <p>SailGP Optimization Visualization</p>
-</div>
-<div id="player-rankings" class='project'>
+</section>
+<section id="player-rankings" class='project'>
 <h3 id="playerrankingsplayerrankings"><a href="PlayerRankings">PlayerRankings</a></h3>
 <p><em>Python, Pandas</em></p>
 <p><img alt="PlayerRankings Dataset" src="/projects/pvb-screenshot2.png"></p>
 <p>Baseball Player Comparison Model</p>
-</div>
-<div id="glyph" class='project'>
+</section>
+<section id="glyph" class='project'>
 <h3 id="meteometeo"><a href="Meteo">Meteo</a></h3>
 <p><em>Python, Curses</em></p>
 <p><img alt="Example of Glyph" src="/projects/meteo-screenshot1.png"></p>
 <p>Canadian Weather TUI</p>
-</div>
-<div id="player-rankings" class='project'>
+</section>
+<section id="player-rankings" class='project'>
 <h3 id="glyphglyph"><a href="Glyph">Glyph</a></h3>
 <p><em>Python</em></p>
 <p><img alt="Example of Glyph" src="/projects/glyph-screenshot.png"></p>
 <p>TeX-Like Markup Language</p>
+</section>
 </div>
-</div>
-
-</content>
-<p>
+  </content>
+  <p>
+    
+  </p>
   
-</p>
-
-
+  
 
 
   </main>
@@ -223,6 +230,6 @@ TeX-Like Markup Language">
     
 </body>
 
+<script src="/scripts.js"></script>
 
-<script src="scripts.js"></script>
 </html>
