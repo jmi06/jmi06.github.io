@@ -36,52 +36,59 @@
 ]]></content:encoded>
     </item>
     <item>
-      <title>xAdvantage: Using Player Percentages to Determine Curling Score Differentials</title>
-      <link>http://localhost:1313/articles/xmargin/</link>
-      <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/articles/xmargin/</guid>
-      <description>Introduction Hook removing luck from the equation Curling has no such stat The solution Methodology We&amp;rsquo;re gonna use XGBOOST Where I found the data the features I engineered Results - The model - The results - Notable moments - men vs women Conclusion How this can be used/applied </description>
-      <content:encoded><![CDATA[<h2 id="introduction">Introduction</h2>
-<ul>
-<li>Hook
-<ul>
-<li>removing luck from the equation</li>
-</ul>
-</li>
-<li>Curling has no such stat</li>
-<li>The solution</li>
-</ul>
-<h2 id="methodology">Methodology</h2>
-<ul>
-<li>We&rsquo;re gonna use XGBOOST</li>
-<li>Where I found the data</li>
-<li>the features I engineered</li>
-</ul>
-<h2 id="results">Results</h2>
-<pre><code>- The model
-- The results
-- Notable moments
-- men vs women
-</code></pre>
-<h2 id="conclusion">Conclusion</h2>
-<ul>
-<li>How this can be used/applied</li>
-</ul>
-]]></content:encoded>
-    </item>
-    <item>
       <title>~/Now</title>
       <link>http://localhost:1313/now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/now/</guid>
-      <description>QuantusSports QuantusSports is in a fairly stable state, the social media bots are working, and the data fetching scripts are doing their jobs. I just finished refactoring, cleaning, and commenting the code in the website repository. These changes will make things much simpler when I implement leagues that use different APIs, or when new sports are not compatible with how the core sports are structured.&#xA;Side Projects In the process of writing an article for a new metric I created for curling games.</description>
+      <description>QuantusSports QuantusSports is in a fairly stable state, the social media bots are working, and the data fetching scripts are doing their jobs. I just finished refactoring, cleaning, and commenting the code in the website repository. These changes will make things much simpler when I implement leagues that use different APIs, or when new sports are not compatible with how the core sports are structured.&#xA;Side Projects I am in the process of writing an article for a new metric I built for curling.</description>
       <content:encoded><![CDATA[<h3 id="quantussports">QuantusSports</h3>
 <p>QuantusSports is in a fairly stable state, the social media bots are working, and the data fetching scripts are doing their jobs. I just finished refactoring, cleaning, and commenting the code in the <a href="https://github.com/jmi06/Quantus-Sports">website repository</a>. These changes will make things much simpler when I implement leagues that use different APIs, or when new sports are not compatible with how the core sports are structured.</p>
 <h3 id="side-projects">Side Projects</h3>
-<ul>
-<li>In the process of writing an article for a new metric I created for curling games.</li>
-<li>Picking away at a list of project ideas, working on whatever I feel that day.</li>
-</ul>
+<p>I am in the process of writing an article for a new metric I built for curling. It allows for the comparison between a team&rsquo;s performance and the result they actually achieved.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>~/Projects/Glyph</title>
+      <link>http://localhost:1313/projects/glyph/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/glyph/</guid>
+      <description>Glyph | January 2026 Python, HTML, CSS&#xA;Glyph is a lightweight, TeX inspired markup language written in Python. It uses a syntax similar to TeX with it&amp;rsquo;s heavy use of backward slashes and curly braces. The Python utilty converts the .glyph files to HTML.</description>
+      <content:encoded><![CDATA[<h3 class="center" id="glyphhttpsgithubcomjmi06glyph--january-2026"><a href="https://github.com/jmi06/Glyph">Glyph</a> | January 2026</h3>
+<p><em>Python, HTML, CSS</em></p>
+<div class="image-row">
+<p><img alt="Glyph example" src="/projects/glyph-screenshot.png"></p>
+</div>
+<p>Glyph is a lightweight, TeX inspired markup language written in Python. It uses a syntax similar to TeX with it&rsquo;s heavy use of backward slashes and curly braces. The Python utilty converts the .glyph files to HTML.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>~/Projects/Meteo</title>
+      <link>http://localhost:1313/projects/meteo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/meteo/</guid>
+      <description>Meteo | December 2025 Python, Curses, Requests&#xA;Meteo is a TUI weather client for Canadian Weather. It fetches weather data from Environment Canada&amp;rsquo;s hidden API. It features current conditions, hourly forecasts, daily forecasts, and weather warnings/alerts.</description>
+      <content:encoded><![CDATA[<h3 class="center" id="meteohttpsgithubcomjmi06meteo--december-2025"><a href="https://github.com/jmi06/Meteo">Meteo</a> | December 2025</h3>
+<p><em>Python, Curses, Requests</em></p>
+<div class="image-row">
+<p><img alt="Meteo weather conditions" src="/projects/meteo-screenshot2.png">
+<img alt="Meteo warning example" src="/projects/meteo-screenshot1.png"></p>
+</div>
+<p>Meteo is a TUI weather client for Canadian Weather. It fetches weather data from Environment Canada&rsquo;s hidden API. It features current conditions, hourly forecasts, daily forecasts, and weather warnings/alerts.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>~/Projects/PlayerRankings</title>
+      <link>http://localhost:1313/projects/playerrankings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/playerrankings/</guid>
+      <description>PlayerRankings | December 2025 - Present Python, Pandas&#xA;I created a Pitcher vs. Batter model to determine who is the best baseball player in MLB. It uses a similar formula to Quantus, except it treats every at-bat as it&amp;rsquo;s own game, and the result of that at-bat determines how much the rating is affected by. For example, if the batter hits a home run, it will impact their rating more than if they draw a walk.</description>
+      <content:encoded><![CDATA[<h3 class="center" id="playerrankingshttpsgithubcomjmi06playerrankings--december-2025---present"><a href="https://github.com/jmi06/PlayerRankings">PlayerRankings</a> | December 2025 - Present</h3>
+<p><em>Python, Pandas</em></p>
+<div class="image-row">
+<p><img alt="Example of ratings" src="/projects/pvb-screenshot2.png">
+<img alt="File with at bats" src="/projects/pvb-screenshot1.png"></p>
+</div>
+<p>I created a Pitcher vs. Batter model to determine who is the best baseball player in MLB. It uses a similar formula to Quantus, except it treats every at-bat as it&rsquo;s own game, and the result of that at-bat determines how much the rating is affected by. For example, if the batter hits a home run, it will impact their rating more than if they draw a walk. Similarly for pitchers, if they strikeout a batter, it will impact their rating more than a routine out. It also takes into account the opponents rating, if an ace gives up a home run to a poor hitter, their rating will take a bigger hit and vice versa. The plan is to integrate this into QuantusSports.</p>
 ]]></content:encoded>
     </item>
     <item>

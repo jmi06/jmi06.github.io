@@ -9,5 +9,4 @@ QuantusSports is in a fairly stable state, the social media bots are working, an
 
   
 ### Side Projects
-- In the process of writing an article for a new metric I created for curling games.
-- Picking away at a list of project ideas, working on whatever I feel that day.
+I am in the process of writing an article for a new metric I built for curling. It allows for the comparison between a team's performance and the result they actually achieved.

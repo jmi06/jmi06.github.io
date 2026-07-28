@@ -9,6 +9,50 @@
     <copyright>Jack Ibsen</copyright>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>~/Projects/Glyph</title>
+      <link>http://localhost:1313/projects/glyph/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/glyph/</guid>
+      <description>Glyph | January 2026 Python, HTML, CSS&#xA;Glyph is a lightweight, TeX inspired markup language written in Python. It uses a syntax similar to TeX with it&amp;rsquo;s heavy use of backward slashes and curly braces. The Python utilty converts the .glyph files to HTML.</description>
+      <content:encoded><![CDATA[<h3 class="center" id="glyphhttpsgithubcomjmi06glyph--january-2026"><a href="https://github.com/jmi06/Glyph">Glyph</a> | January 2026</h3>
+<p><em>Python, HTML, CSS</em></p>
+<div class="image-row">
+<p><img alt="Glyph example" src="/projects/glyph-screenshot.png"></p>
+</div>
+<p>Glyph is a lightweight, TeX inspired markup language written in Python. It uses a syntax similar to TeX with it&rsquo;s heavy use of backward slashes and curly braces. The Python utilty converts the .glyph files to HTML.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>~/Projects/Meteo</title>
+      <link>http://localhost:1313/projects/meteo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/meteo/</guid>
+      <description>Meteo | December 2025 Python, Curses, Requests&#xA;Meteo is a TUI weather client for Canadian Weather. It fetches weather data from Environment Canada&amp;rsquo;s hidden API. It features current conditions, hourly forecasts, daily forecasts, and weather warnings/alerts.</description>
+      <content:encoded><![CDATA[<h3 class="center" id="meteohttpsgithubcomjmi06meteo--december-2025"><a href="https://github.com/jmi06/Meteo">Meteo</a> | December 2025</h3>
+<p><em>Python, Curses, Requests</em></p>
+<div class="image-row">
+<p><img alt="Meteo weather conditions" src="/projects/meteo-screenshot2.png">
+<img alt="Meteo warning example" src="/projects/meteo-screenshot1.png"></p>
+</div>
+<p>Meteo is a TUI weather client for Canadian Weather. It fetches weather data from Environment Canada&rsquo;s hidden API. It features current conditions, hourly forecasts, daily forecasts, and weather warnings/alerts.</p>
+]]></content:encoded>
+    </item>
+    <item>
+      <title>~/Projects/PlayerRankings</title>
+      <link>http://localhost:1313/projects/playerrankings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/playerrankings/</guid>
+      <description>PlayerRankings | December 2025 - Present Python, Pandas&#xA;I created a Pitcher vs. Batter model to determine who is the best baseball player in MLB. It uses a similar formula to Quantus, except it treats every at-bat as it&amp;rsquo;s own game, and the result of that at-bat determines how much the rating is affected by. For example, if the batter hits a home run, it will impact their rating more than if they draw a walk.</description>
+      <content:encoded><![CDATA[<h3 class="center" id="playerrankingshttpsgithubcomjmi06playerrankings--december-2025---present"><a href="https://github.com/jmi06/PlayerRankings">PlayerRankings</a> | December 2025 - Present</h3>
+<p><em>Python, Pandas</em></p>
+<div class="image-row">
+<p><img alt="Example of ratings" src="/projects/pvb-screenshot2.png">
+<img alt="File with at bats" src="/projects/pvb-screenshot1.png"></p>
+</div>
+<p>I created a Pitcher vs. Batter model to determine who is the best baseball player in MLB. It uses a similar formula to Quantus, except it treats every at-bat as it&rsquo;s own game, and the result of that at-bat determines how much the rating is affected by. For example, if the batter hits a home run, it will impact their rating more than if they draw a walk. Similarly for pitchers, if they strikeout a batter, it will impact their rating more than a routine out. It also takes into account the opponents rating, if an ace gives up a home run to a poor hitter, their rating will take a bigger hit and vice versa. The plan is to integrate this into QuantusSports.</p>
+]]></content:encoded>
+    </item>
+    <item>
       <title>~/Projects/QuantusSports</title>
       <link>http://localhost:1313/projects/quantussports/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

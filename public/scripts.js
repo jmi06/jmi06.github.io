@@ -90,8 +90,6 @@ async function commitsThisMonth(){
 
 	document.getElementById("commits-num").innerText = response['total_count']
 
-
-
 }
 
 
