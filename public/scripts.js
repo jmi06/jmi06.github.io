@@ -51,7 +51,7 @@ function timeAndDate(){
 async function getStatus(){
 	//Key: url, Value: id
 	sites = {
-		"https://ibsen.dev": "ibsendev",
+		"https://jmi06.github.io": "ibsendev",
 		"https://quantussports.vercel.app": "quantussports"
 	}
 

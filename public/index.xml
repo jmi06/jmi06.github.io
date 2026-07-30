@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jack Ibsen</title>
-    <link>https://example.org/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Jack Ibsen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-CA</language>
     <copyright>Jack Ibsen</copyright>
     <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Combined Optimal Route: Audience friendly route optimizations for SailGP</title>
-      <link>https://example.org/articles/cor/</link>
+      <link>http://localhost:1313/articles/cor/</link>
       <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://example.org/articles/cor/</guid>
+      <guid>http://localhost:1313/articles/cor/</guid>
       <description>This project won third place at the 13th DeepSense Ocean of Data Challenge&#xA;In SailGP, each team takes a slightly different path in order to capitalize on the best wind conditions. Combined Optimal Route (COR) takes the path of every team, and tries to find the most optimal route between them.&#xA;If two cars are racing on a track, one on the inside, one on the outside, which car&amp;rsquo;s path will be faster?</description>
       <content:encoded><![CDATA[<p><em>This project won third place at the <a href="https://deepsense.ca/ocean-of-data-challenge/">13th DeepSense Ocean of Data Challenge</a></em></p>
 <p>In SailGP, each team takes a slightly different path in order to capitalize on the best wind conditions. Combined Optimal Route (COR) takes the path of every team, and tries to find the most optimal route between them.</p>
@@ -37,9 +37,9 @@
     </item>
     <item>
       <title>~/Now</title>
-      <link>https://example.org/now/</link>
+      <link>http://localhost:1313/now/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/now/</guid>
+      <guid>http://localhost:1313/now/</guid>
       <description>QuantusSports QuantusSports is in a fairly stable state, the social media bots are working, and the data fetching scripts are doing their jobs. I just finished refactoring, cleaning, and commenting the code in the website repository. These changes will make things much simpler when I implement leagues that use different APIs, or when new sports are not compatible with how the core sports are structured.&#xA;Side Projects I am in the process of writing an article for a new metric I built for curling.</description>
       <content:encoded><![CDATA[<h3 id="quantussports">QuantusSports</h3>
 <p>QuantusSports is in a fairly stable state, the social media bots are working, and the data fetching scripts are doing their jobs. I just finished refactoring, cleaning, and commenting the code in the <a href="https://github.com/jmi06/Quantus-Sports">website repository</a>. These changes will make things much simpler when I implement leagues that use different APIs, or when new sports are not compatible with how the core sports are structured.</p>
@@ -49,9 +49,9 @@
     </item>
     <item>
       <title>~/Projects/Glyph</title>
-      <link>https://example.org/projects/glyph/</link>
+      <link>http://localhost:1313/projects/glyph/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/projects/glyph/</guid>
+      <guid>http://localhost:1313/projects/glyph/</guid>
       <description>Glyph | January 2026 Python, HTML, CSS&#xA;Glyph is a lightweight, TeX inspired markup language written in Python. It uses a syntax similar to TeX with it&amp;rsquo;s heavy use of backward slashes and curly braces. The Python utilty converts the .glyph files to HTML.</description>
       <content:encoded><![CDATA[<h3 class="center" id="glyphhttpsgithubcomjmi06glyph--january-2026"><a href="https://github.com/jmi06/Glyph">Glyph</a> | January 2026</h3>
 <p><em>Python, HTML, CSS</em></p>
@@ -63,9 +63,9 @@
     </item>
     <item>
       <title>~/Projects/Meteo</title>
-      <link>https://example.org/projects/meteo/</link>
+      <link>http://localhost:1313/projects/meteo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/projects/meteo/</guid>
+      <guid>http://localhost:1313/projects/meteo/</guid>
       <description>Meteo | December 2025 Python, Curses, Requests&#xA;Meteo is a TUI weather client for Canadian Weather. It fetches weather data from Environment Canada&amp;rsquo;s hidden API. It features current conditions, hourly forecasts, daily forecasts, and weather warnings/alerts.</description>
       <content:encoded><![CDATA[<h3 class="center" id="meteohttpsgithubcomjmi06meteo--december-2025"><a href="https://github.com/jmi06/Meteo">Meteo</a> | December 2025</h3>
 <p><em>Python, Curses, Requests</em></p>
@@ -78,9 +78,9 @@
     </item>
     <item>
       <title>~/Projects/PlayerRankings</title>
-      <link>https://example.org/projects/playerrankings/</link>
+      <link>http://localhost:1313/projects/playerrankings/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/projects/playerrankings/</guid>
+      <guid>http://localhost:1313/projects/playerrankings/</guid>
       <description>PlayerRankings | December 2025 - Present Python, Pandas&#xA;I created a Pitcher vs. Batter model to determine who is the best baseball player in MLB. It uses a similar formula to Quantus, except it treats every at-bat as it&amp;rsquo;s own game, and the result of that at-bat determines how much the rating is affected by. For example, if the batter hits a home run, it will impact their rating more than if they draw a walk.</description>
       <content:encoded><![CDATA[<h3 class="center" id="playerrankingshttpsgithubcomjmi06playerrankings--december-2025---present"><a href="https://github.com/jmi06/PlayerRankings">PlayerRankings</a> | December 2025 - Present</h3>
 <p><em>Python, Pandas</em></p>
@@ -93,9 +93,9 @@
     </item>
     <item>
       <title>~/Projects/QuantusSports</title>
-      <link>https://example.org/projects/quantussports/</link>
+      <link>http://localhost:1313/projects/quantussports/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.org/projects/quantussports/</guid>
+      <guid>http://localhost:1313/projects/quantussports/</guid>
       <description>QuantusSports | May 2025 - Present Python, Flask, HTML, CSS, JavaScript, Vercel&#xA;QuantusSports is a sports analytics and statistics project I started in May 2025. It began as an Elo system for MLB games where point differentials were taken into account. I then ported the system over to the NHL and NBA as well.&#xA;The project now houses a number of rating systems, including the original QuantusRatings, and the graph theory based QuantusIndex.</description>
       <content:encoded><![CDATA[<h3 class="center" id="quantussportshttpsquantussportsvercelapp--may-2025---present"><a href="https://quantussports.vercel.app/">QuantusSports</a> | May 2025 - Present</h3>
 <p><em>Python, Flask, HTML, CSS, JavaScript, Vercel</em></p>

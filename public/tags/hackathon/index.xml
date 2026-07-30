@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Hackathon on Jack Ibsen</title>
-    <link>https://example.org/tags/hackathon/</link>
+    <link>http://localhost:1313/tags/hackathon/</link>
     <description>Recent content in Hackathon on Jack Ibsen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-CA</language>
     <copyright>Jack Ibsen</copyright>
     <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/tags/hackathon/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/hackathon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Combined Optimal Route: Audience friendly route optimizations for SailGP</title>
-      <link>https://example.org/articles/cor/</link>
+      <link>http://localhost:1313/articles/cor/</link>
       <pubDate>Thu, 09 Jul 2026 00:00:00 +0000</pubDate>
-      <guid>https://example.org/articles/cor/</guid>
+      <guid>http://localhost:1313/articles/cor/</guid>
       <description>This project won third place at the 13th DeepSense Ocean of Data Challenge&#xA;In SailGP, each team takes a slightly different path in order to capitalize on the best wind conditions. Combined Optimal Route (COR) takes the path of every team, and tries to find the most optimal route between them.&#xA;If two cars are racing on a track, one on the inside, one on the outside, which car&amp;rsquo;s path will be faster?</description>
       <content:encoded><![CDATA[<p><em>This project won third place at the <a href="https://deepsense.ca/ocean-of-data-challenge/">13th DeepSense Ocean of Data Challenge</a></em></p>
 <p>In SailGP, each team takes a slightly different path in order to capitalize on the best wind conditions. Combined Optimal Route (COR) takes the path of every team, and tries to find the most optimal route between them.</p>
