@@ -67,15 +67,28 @@ layout: "single page"
 Unique Sports Data Metrics
 
 </section>
+
+<section id="xmargin" class='project'>
+
+### [xMargin](/articles/xmargin)
+
+*Python, XGBoost*
+
+![QuantusBasketball ratings page](/projects/quantussports-screenshot5.png)
+
+Unique Sports Data Metrics
+
+</section>
+
+
 <section id="cor" class='project'>
 
 ### [Combined Optimal Route (COR)](/articles/COR)
 
 *Python, Matplotlib*
 
-![PlayerRankings Dataset](/projects/pvb-screenshot2.png)
 
-SailGP Optimization Visualization
+Curling Expected Point Margins
 
 </section>
 
