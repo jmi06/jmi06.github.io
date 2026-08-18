@@ -36,7 +36,7 @@ Email - [Here](/contact)
 
 <div class="status">
 Status:
-<p id="ibsendev">ibsen.dev: [<span></span>]</p>
+<p id="ibsendev">jmi06.github.io: [<span></span>]</p>
 <p id="quantussports">QuantusSports: [<span></span>]</p>
 </div>
 
