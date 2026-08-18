@@ -19,9 +19,9 @@ I am a second-year undergraduate Computer Science student at Dalhousie Universit
 
 GitHub - [jmi06](https://github.com/jmi06)  
 LinkedIn - [Jack Ibsen](https://www.linkedin.com/in/jackibsen/)  
-Mastodon - [@ibsen@mstdn.ca](https://mstdn.ca/@ibsen)
+<!-- Mastodon - [@ibsen@mstdn.ca](https://mstdn.ca/@ibsen) -->
 
-Email - [Here](/contact)  
+<!-- Email - [Here](/contact)   -->
 </section>
 
 <section style="display: flex; align-items: center;">
