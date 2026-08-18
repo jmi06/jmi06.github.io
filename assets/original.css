@@ -4,16 +4,16 @@ body {
   padding: 20px;
   max-width: 720px;
   text-align: left;
-  /* background-color: #0F141C; */
+  /* background-color: #0c1016; */
+  background-color: #10141d;
   word-wrap: break-word;
   overflow-wrap: break-word;
   line-height: 1.5;
   color: #c9d1d9;
 
-  background-image: linear-gradient(#384662),url(blocks.png);
-
-  background-blend-mode: multiply;
-  background-repeat: repeat;
+  /* background-image: linear-gradient(#384662),url(blocks.png); */
+  /* background-blend-mode: multiply; */
+  /* background-repeat: repeat; */
 }
 
 h1,
@@ -219,7 +219,7 @@ figcaption > p {
 header{
 	border: #2e3440 4px solid;
 	padding: 5px;
-	background-color: #0f141c;
+	background-color: #151a25;
 	box-shadow: 12px 12px 2px 1px rgba(0,0,0,.3);
 }
 
@@ -235,7 +235,7 @@ main {
 
 section{
 	border: #2e3440 4px solid;
-	background-color: #0F141C;
+	background-color: #151a25;
 	padding: 15px;
 	box-shadow: 12px 12px 2px 1px rgba(0,0,0,0.3);
 	margin-bottom:20px;

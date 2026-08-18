@@ -7,8 +7,73 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-CA</language>
     <copyright>Jack Ibsen</copyright>
-    <lastBuildDate>Thu, 09 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 06 Aug 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>xMargin: Expected Point Margin model for Curling</title>
+      <link>http://localhost:1313/articles/xmargin/</link>
+      <pubDate>Thu, 06 Aug 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/articles/xmargin/</guid>
+      <description>Source code for this project is available on GitHub&#xA;Introduction In curling, the traditional metrics that are used to determine a team’s performance include their hammer efficiency, ability to achieve and prevent steals, the number of big ends scored or given up, and shooting percentages (ERHAN). On their own, when compared to the mean, these metrics can give a general overview of performance. What these metrics do not determine is whether the scoreboard and performance align.</description>
+      <content:encoded><![CDATA[</section>
+<section>
+<p><em>Source code for this project is available on <a href="https://github.com/jmi06/xMargin">GitHub</a></em></p>
+<h2 id="introduction">Introduction</h2>
+<p>In curling, the traditional metrics that are used to determine a team’s performance include their hammer efficiency, ability to achieve and prevent steals, the number of big ends scored or given up, and shooting percentages (ERHAN). On their own, when compared to the mean, these metrics can give a general overview of performance. What these metrics do not determine is whether the scoreboard and performance align. Consequently, spectators, coaches, and players are unable to compare a team&rsquo;s performance to the result they achieved.</p>
+<p>A team dominant in every performance metric could find themselves in a tight game due to poor luck, while two opponents with identical shooting percentages could end up with a large point differential due to variability in ice conditions. This article introduces \(xMargin\) (xM), a model that predicts a curling team’s expected point margin by analyzing performance differentials between two competing teams after each end. Comparing a team’s \(xMargin\) to the actual point margin demonstrates the influence of variability on the game’s outcome and isolates a team’s performance from the result.</p>
+<h2 id="background">Background</h2>
+<p>Soccer uses a metric known as xG (expected goals) to predict what the score should be based on the offensive performance of both the playing teams. xG uses historical data of similar shot attempts to predict how likely a shot is to result in a goal. If a player takes a shot from a scenario that resulted in a goal 60% of the time, their xG would be 0.6. The xG values of each shot are summed to determine the expected number of goals during a game. The xG metric is used to evaluate a team’s overall offensive performance, looking past the scoreline and taking note of opportunities created (BBC). A very similar model has been used in ice hockey, to evaluate the same concept (MacDonald).</p>
+<p>In curling, points are not scored on individual shots, rather after an end is played. Individual end performances could be analyzed, and the expected result of each end could be summed to find what the final score should be, similar to xG. Most metrics used in curling such as hammer efficiency and steal defense look at the game as a whole, thus can not be used to determine a team’s performance in an end. Curling does have one metric that changes after each shot is thrown, shot ratings. After each shot is thrown, it is given a rating between zero and four. A shot rated four indicates it was perfectly made, where a zero indicates a complete miss. By using the differential shot rating for each position during an end, along with a few other factors, a model could be built to predict the result based on historically similar ends.</p>
+<p>Unlike soccer, where any team can score at any time, in curling only one team can score per end. Therefore it does not make sense to calculate the expected score for both teams each end. Rather, our model should track the same team for the entire game, and predict the point margin each end. Positive values indicate points scored, negative values indicate points given up, and zero represents a blank end.</p>
+<p>This introduces \(xMargin\), an expected point margin model for curling. After an end is played, the point margin for the target team, denoted \(xMargin_{end}\), is predicted using hammer information, and positional differentials in shot ratings. The sum of these \(xMargin_{end}\) values give us our final \(xMargin\).</p>
+<h2 id="methodology">Methodology</h2>
+<p>An XgBoost gradient boosted decision tree model was trained to create xMargin. XgBoost was chosen as it works well with structured data, and excels at determining important relationships between features.</p>
+<p>To train the model we analyzed game data for all Brier and Tournament of Hearts championships (the Canadian national men’s and women&rsquo;s championships, respectively) between 2023 and 2026. This range was selected because it encompasses the first national championships to implement the “no tick rule” (link to the no-tick rule), through to the most recent events as of writing this article. Men’s and Women’s data were kept separate in training.</p>
+<p>Data was collected from Curling Canada’s event scoreboard pages (curling.ca/scoreboard) using the underlying curling.io API endpoints.</p>
+<p>All differential metrics are calculated from the perspective of Team A, including our final target variable, xMargin, which predicts the current point margin for TeamA at a 1 end resolution. For each end played in a match, we engineered the following features.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Feature</th>
+<th style="text-align:center">Formula</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">\(\Delta Shot Rating_A(Position,End)\)</td>
+<td style="text-align:center">\(R_{A,Position} - R_{B,Position}\)</td>
+<td style="text-align:left">Difference in shot rating against the opponent at each position for a select end.</td>
+</tr>
+<tr>
+<td style="text-align:left">\(Δ Backend Zeroes_A\)</td>
+<td style="text-align:center">\(ScheduledEnds-RemainingEnds\)</td>
+<td style="text-align:left">Differential number of total misses shot by the third and fourth.</td>
+</tr>
+<tr>
+<td style="text-align:left">\(EndsRemaining\)</td>
+<td style="text-align:center">\(ScheduledEnds-RemainingEnds\)</td>
+<td style="text-align:left">Number of scheduled ends remaining in the game.</td>
+</tr>
+<tr>
+<td style="text-align:left">\(Hammer_A\)</td>
+<td style="text-align:center">\(=\begin{cases}\)</td>
+<td style="text-align:left">Whether or not Team A has the hammer in the end.</td>
+</tr>
+<tr>
+<td style="text-align:left">\(LSFE_A\)</td>
+<td style="text-align:center">\(=\begin{cases}\)</td>
+<td style="text-align:left">Number of scheduled ends remaining in the game.</td>
+</tr>
+<tr>
+<td style="text-align:left">\(Even End\)</td>
+<td style="text-align:center">\(%\)</td>
+<td style="text-align:left">Whether the current end number is even.</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+    </item>
     <item>
       <title>Combined Optimal Route: Audience friendly route optimizations for SailGP</title>
       <link>http://localhost:1313/articles/cor/</link>
