@@ -1,5 +1,5 @@
 ---
-title: "xMargin: Expected Point Margin model for Curling"
+title: "xMargin: Expected Point Margin Model for Curling"
 author: "Jack Ibsen"
 date: 2026-08-18
 tags: ['sports', 'data-science']
