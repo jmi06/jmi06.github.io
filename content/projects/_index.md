@@ -76,7 +76,7 @@ Unique Sports Data Metrics
 
 ![QuantusBasketball ratings page](/projects/quantussports-screenshot5.png)
 
-Unique Sports Data Metrics
+Expected Points Model for Curling
 
 </section>
 
@@ -87,8 +87,7 @@ Unique Sports Data Metrics
 
 *Python, Matplotlib*
 
-
-Curling Expected Point Margins
+SailGP Optimization Visualization
 
 </section>
 
