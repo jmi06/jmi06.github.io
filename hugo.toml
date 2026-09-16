@@ -1,4 +1,4 @@
-baseURL = 'https://jmi06.github.io/'
+baseURL = 'https://ibsen.dev/'
 languageCode = 'en-us'
 title = 'Jack Ibsen'
 theme = "hugo-bearcub"
